@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0078D7"
+    tools:context=".Instrucciones">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-black"
+        android:text="INSTRUCCIONES"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="235dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/intrucciones" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="381dp"
+        android:layout_height="308dp"
+        android:backgroundTint="#00BF2929"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center|start|top"
+        android:inputType="textMultiLine"
+        android:text="El objetivo del Buscaminas es despejar todo el área sin detonar las minas. Así que el jugador tiene que ser muy observador para no cometer ningún fallo. Al pulsar sobre las celdas, aparece una zona despejada y números que determinan la proximidad de una mina. Una mina (1), dos minas (2), tres minas (3)... y así sucesivamente. Por ejemplo, en las celdas contiguas a un [2] sólo habrá dos minas. Tienes que marcar las celdas correctas para avanzar en el juego. Cada nivel se genera de manera aleatoria, así que no habrá dos partidas iguales."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="12dp"
+        android:background="#C115315C"
+        android:backgroundTint="#A33F51B5"
+        android:onClick="Home"
+        android:text="INICIO"
+        android:textColor="#F7F9FB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+</androidx.constraintlayout.widget.ConstraintLayout>
